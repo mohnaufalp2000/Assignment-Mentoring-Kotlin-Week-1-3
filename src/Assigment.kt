@@ -39,11 +39,43 @@ fun examValue(value : Int){
 
 // task 5
 fun checkWord(city : Array<String>) {
-
     println("\ntask 5")
+    var a = 0
+    var b = 0
+    var c = 0
+    var d = 0
+    var e = 0
+    var f = 0
+
      for (i in city.indices){
-         print(city[i]+",")
+         if(city[i]=="jakarta") {
+             a++
+         }
+         else if(city[i]=="Padang") {
+             b++
+         }
+         else if(city[i]=="Solo") {
+             c++
+         }
+         else if(city[i]=="Bandung") {
+             d++
+         }
+         else if(city[i]=="Malang") {
+             e++
+         }
+         else if(city[i]=="Bali") {
+             f++
+         }
+
      }
+    println("""
+        Jakarta: ${a}
+        Padang: ${b}
+        Solo: ${c}
+        Bandung: ${d}
+        Malang: ${e}
+        Bali: ${f}
+    """.trimIndent())
 }
 
 fun main(){
